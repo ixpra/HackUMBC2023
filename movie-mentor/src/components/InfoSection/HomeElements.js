@@ -6,14 +6,12 @@ export const HomeContainer = styled.div`
 `;
 
 export const BackgroundVideo = styled.video`
-  position: relative;
-  top: 40px;
-  position: fixed;
+ position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
-  height: 150%;
-  /* object-fit: cover; */
+  height: 100%;
+  object-fit: cover;
   z-index: -1;
   background: rgba(0, 0, 0, 0.5);
 `;
