@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HomeContainer, BackgroundVideo, Content, LargeText, TransparentButton } from '../components/InfoSection/HomeElements';
+import Navbar from '../components/Navbar';
 
 const Home = () => {
 
   return (
+    <>
+    <Navbar/>
     <HomeContainer>
       <BackgroundVideo autoPlay muted loop>
         {/* <source src={require('../assets/.mp4')} type="video/mp4" /> */}
@@ -22,6 +25,7 @@ const Home = () => {
         </div>
       </Content>
     </HomeContainer>
+    </>
   );
 };
 
