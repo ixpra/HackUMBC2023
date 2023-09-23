@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { HomeContainer, BackgroundVideo, Content, LargeText, SearchContainer, SearchInput } from '../components/InfoSection/HomeElements';
+import { HomeContainer, BackgroundVideo, Content, LargeText, TransparentButton, SearchContainer, SearchInput } from '../components/InfoSection/HomeElements';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+
+import '../styles/About.css';
 
 const Home = () => {
 
@@ -15,10 +17,13 @@ const Home = () => {
       </BackgroundVideo>
 
       <Content>
-        <LargeText>Delve Into The Cinematic Gems</LargeText>
+        <LargeText>Your Cinematic Discovery</LargeText>
+        {/* <div className='alt-subtitle'> */}
         <SearchContainer>
           <SearchInput type="text" placeholder="Search movies..." />
         </SearchContainer>
+        {/* </div> */}
+        
       </Content>
     </HomeContainer>
     <Footer/>
