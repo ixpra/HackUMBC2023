@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { HomeContainer, BackgroundVideo, Content, LargeText, TransparentButton } from '../components/InfoSection/HomeElements';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const Home = () => {
 
@@ -25,6 +26,7 @@ const Home = () => {
         </div>
       </Content>
     </HomeContainer>
+    <Footer/>
     </>
   );
 };
