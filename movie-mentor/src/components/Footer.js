@@ -10,14 +10,14 @@ const Footer = () => {
         <div className='foot-branding'>
             <span>Code & Design by </span>
             {/* <img src={require('../assets/hsslogo.png')}/> */}
-            <span>Bharat Mahotsav Mandal LATAM</span>
-            <a target="_blank" href="https://www.instagram.com/bmmlatam/">
+            <span>Movie Mentor</span>
+            {/* <a target="_blank" href="https://www.instagram.com/bmmlatam/">
                 <FaInstagram className='foot-social'/>
-            </a>
+            </a> */}
             
         </div>
 
-        <p>bharatmahotsav.mx@gmail.com</p>
+        <p>mailto@email.com</p>
 
     </div>
   )
