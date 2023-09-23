@@ -33,6 +33,19 @@ export const LargeText = styled.h1`
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
 `;
 
+export const SearchContainer = styled.div`
+  margin-top: 20px;
+`;
+
+export const SearchInput = styled.input`
+  padding: 10px;
+  width: 300px;
+  font-size: 18px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+`;
+
 export const TransparentButton = styled.button`
   background-color: transparent;
   border: 2px solid #fff; 
