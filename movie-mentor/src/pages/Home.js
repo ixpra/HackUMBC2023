@@ -17,7 +17,7 @@ const Home = () => {
       </BackgroundVideo>
 
       <Content>
-        <LargeText>Delve Into The Cinematic Gems</LargeText>
+        <LargeText>Your Cinematic Discovery</LargeText>
         {/* <div className='alt-subtitle'> */}
         <SearchContainer>
           <SearchInput type="text" placeholder="Search movies..." />
