@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 
 
 import '../styles/Navbar.css';
+import '../styles/About.css';
 
 const About = () => {
 
