@@ -10,9 +10,9 @@ const Home = () => {
     <>
     <Navbar/>
     <HomeContainer>
-      <BackgroundVideo autoPlay muted loop>
+      {/* <BackgroundVideo autoPlay muted loop>
         {/* <source src={require('../assets/.mp4')} type="video/mp4" /> */}
-      </BackgroundVideo>
+      {/*</BackgroundVideo> */}
 
       <Content>
         <LargeText>Delve Into The Cinematic Gems</LargeText>
