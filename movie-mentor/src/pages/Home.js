@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <HomeContainer>
       <BackgroundVideo autoPlay muted loop>
-        <source src={require('../assets/.mp4')} type="video/mp4" />
+        {/* <source src={require('../assets/.mp4')} type="video/mp4" /> */}
       </BackgroundVideo>
 
       <Content>
