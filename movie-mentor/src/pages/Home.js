@@ -7,6 +7,8 @@ import Footer from '../components/Footer';
 const Home = () => {
 
   return (
+    <>
+    <Navbar/>
     <HomeContainer>
       <BackgroundVideo autoPlay muted loop>
         {/* <source src={require('../assets/.mp4')} type="video/mp4" /> */}
@@ -27,6 +29,8 @@ const Home = () => {
         </div>
       </Content>
     </HomeContainer>
+    <Footer/>
+    </>
   );
 };
 
