@@ -1,14 +1,15 @@
 .footer-container{
     width: 100vw;
-    height: 20px;
+    height: 25px;
      margin-top: 10vw;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 14px;
-
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     z-index: 100;
+    border: 1px solid red;
 }
 
 .foot-branding img{

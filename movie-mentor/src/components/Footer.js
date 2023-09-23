@@ -14,14 +14,7 @@ const Footer = () => {
             <a target="_blank" href="https://www.instagram.com/bmmlatam/">
                 <FaInstagram className='foot-social'/>
             </a>
-            {/*
-            <a target="_blank" href="https://twitter.com/nitesoutent">
-                <FaTwitter className='foot-social'/>
-            </a>
-            <a target="_blank" href="">
-                <FaTiktok className='foot-social'/>
-            </a>
-            */}
+            
         </div>
 
         <p>bharatmahotsav.mx@gmail.com</p>
