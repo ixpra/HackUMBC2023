@@ -8,9 +8,9 @@ const Footer = () => {
   return (
     <div className='footer-container'>
         <div className='foot-branding'>
-            <span>Code & Design by </span>
+            <span>Code & Design by Movie Mentor</span>
             {/* <img src={require('../assets/hsslogo.png')}/> */}
-            <span>Movie Mentor</span>
+            {/* <span>Movie Mentor</span> */}
             {/* <a target="_blank" href="https://www.instagram.com/bmmlatam/">
                 <FaInstagram className='foot-social'/>
             </a> */}
