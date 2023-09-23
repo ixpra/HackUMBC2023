@@ -45,12 +45,13 @@ export const SearchContainer = styled.div`
 export const SearchInput = styled.input`
   padding: 10px;
   width: 500px;
+  color: #fff; /* Set the text color to white */
   font-size: 18px;
   border: 2px solid #fff;
   background-color: transparent;
-  color: #fff;
   border-radius: 25px;
 `;
+  
 
 export const TransparentButton = styled.button`
   background-color: transparent;
