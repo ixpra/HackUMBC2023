@@ -1,8 +1,9 @@
 import {React, useEffect} from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 
-
-import '../css/Navbar.css';
+import '../styles/Navbar.css';
 
 const About = () => {
 
