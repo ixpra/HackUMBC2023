@@ -39,11 +39,12 @@ export const SearchContainer = styled.div`
 
 export const SearchInput = styled.input`
   padding: 10px;
-  width: 300px;
+  width: 500px;
   font-size: 18px;
   border: 2px solid #fff;
   background-color: transparent;
   color: #fff;
+  border-radius: 25px;
 `;
 
 export const TransparentButton = styled.button`
