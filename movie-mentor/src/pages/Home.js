@@ -4,6 +4,8 @@ import { HomeContainer, BackgroundVideo, Content, LargeText, TransparentButton, 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
+import '../styles/About.css';
+
 const Home = () => {
 
   return (
@@ -16,12 +18,12 @@ const Home = () => {
 
       <Content>
         <LargeText>Delve Into The Cinematic Gems</LargeText>
+        {/* <div className='alt-subtitle'> */}
         <SearchContainer>
           <SearchInput type="text" placeholder="Search movies..." />
         </SearchContainer>
-        <div>
-      
-        </div>
+        {/* </div> */}
+        
       </Content>
     </HomeContainer>
     <Footer/>
