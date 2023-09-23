@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const HomeContainer = styled.div`
   position: relative;
   height: 100vh;
-  overflow: hidden;
 `;
 
 export const BackgroundVideo = styled.video`
