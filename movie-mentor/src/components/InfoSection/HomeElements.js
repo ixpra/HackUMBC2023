@@ -34,8 +34,7 @@ export const Content = styled.div`
 export const LargeText = styled.h1`
   font-size: 48px;
   font-weight: bold;
-  color: #fff; 
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
+  color: #fff;  
 `;
 
 export const SearchContainer = styled.div`
@@ -45,7 +44,7 @@ export const SearchContainer = styled.div`
 export const SearchInput = styled.input`
   padding: 10px;
   width: 500px;
-  color: #fff; /* Set the text color to white */
+  color: #fff; 
   font-size: 18px;
   border: 2px solid #fff;
   background-color: transparent;
