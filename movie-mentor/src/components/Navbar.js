@@ -45,7 +45,7 @@ const Navbar = () => {
                 <div className='menu-container menu-enter' id='cool-menu'>
                     <MdClose className='close-menu' onClick={menuLeave}/>
                     <Link to='/'><p className='menu-btn'>Home</p></Link>
-                    {/* <Link to='/blood-drive'><p className='menu-btn red-text-mobile'>Blood Drive</p></Link> */}
+
 
                     <Link to='/about'><p className='menu-btn'>About us</p></Link>
 
