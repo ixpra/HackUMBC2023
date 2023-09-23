@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "movier": "^3.0.4",
-    "react-router-dom": "^6.16.0"
-  }
-}
