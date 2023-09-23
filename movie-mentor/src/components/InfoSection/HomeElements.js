@@ -2,16 +2,16 @@ import styled from 'styled-components';
 
 export const HomeContainer = styled.div`
   position: relative;
-  height: 100vw;
+  height: 100%;
 `;
 
 export const BackgroundVideo = styled.video`
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: 40px;
   left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 150%;
+  /* object-fit: cover; */
   z-index: -1;
   background: rgba(0, 0, 0, 0.5); 
 `;
