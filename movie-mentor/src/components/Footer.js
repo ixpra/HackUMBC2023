@@ -17,7 +17,7 @@ const Footer = () => {
             
         </div>
 
-        <p>HackUMBC 2023</p>
+        <p>mailto@email.com</p>
 
     </div>
   )
