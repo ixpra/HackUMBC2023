@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { HomeContainer, BackgroundVideo, Content, LargeText, TransparentButton, SearchContainer, SearchInput } from '../components/InfoSection/HomeElements';
+import { HomeContainer, BackgroundVideo, Content, LargeText, SearchContainer, SearchInput } from '../components/InfoSection/HomeElements';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -19,14 +19,6 @@ const Home = () => {
         <SearchContainer>
           <SearchInput type="text" placeholder="Search movies..." />
         </SearchContainer>
-        <div>
-          {/* <Link to="> 
-            <TransparentButton>ggg</TransparentButton>
-           </Link> 
-          <Link to="/about"> 
-            <TransparentButton>ggg</TransparentButton>
-           </Link> */}
-        </div>
       </Content>
     </HomeContainer>
     <Footer/>
