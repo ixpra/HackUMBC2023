@@ -32,8 +32,15 @@ const Navbar = () => {
     
          
 
+    const menuLeave = () => {
+        document.getElementById("cool-menu").classList.remove("menu-enter");
+        document.getElementById("cool-menu").classList.add("menu-leave");
 
-    
+        setTimeout(()=>{
+            setMenu(false);
+        }, 400);
+    };
+    const [menu, setMenu] = useState(false);
 
     
 
