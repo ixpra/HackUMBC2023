@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import  OpenAI from 'openai';
 import { useState } from 'react';
 import './App.css';
@@ -9,16 +10,11 @@ import About from './pages/About';
 
 
 
-
-
-
-
-
-
 function App() {
-
+  
   return (
     <Router>
+      
       <Navbar />
       <Routes>
         <Route path="/" exact Component={Home} />
