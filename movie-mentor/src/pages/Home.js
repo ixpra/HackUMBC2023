@@ -13,7 +13,7 @@ const Home = () => {
     <Navbar/>
     <HomeContainer>
       <BackgroundVideo autoPlay muted loop>
-        {/* <source src={require('../assets/.mp4')} type="video/mp4" /> */}
+         <source src={require('../assets/sea.mp4')} type="video/mp4" /> 
       </BackgroundVideo>
 
       <Content>
