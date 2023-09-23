@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { HomeContainer, BackgroundVideo, Content, LargeText, TransparentButton } from '../components/InfoSection/HomeElements';
+import { HomeContainer, BackgroundVideo, Content, LargeText, TransparentButton, SearchContainer, SearchInput } from '../components/InfoSection/HomeElements';
 
 const Home = () => {
 
@@ -12,13 +12,16 @@ const Home = () => {
 
       <Content>
         <LargeText>Delve Into The Cinematic Gems</LargeText>
+        <SearchContainer>
+          <SearchInput type="text" placeholder="Search movies..." />
+        </SearchContainer>
         <div>
-          <Link to="/roadmaps">
+          {/* <Link to="> 
             <TransparentButton>ggg</TransparentButton>
-          </Link>
-          <Link to="/about">
+           </Link> 
+          <Link to="/about"> 
             <TransparentButton>ggg</TransparentButton>
-          </Link>
+           </Link> */}
         </div>
       </Content>
     </HomeContainer>
