@@ -1,21 +1,26 @@
 import styled from 'styled-components';
 
 export const HomeContainer = styled.div`
-  height: 1000%;
-  width: 1000px;
-  background-color: aqua;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 4;
+  margin-bottom: -20vh;
 `;
 
-// export const BackgroundVideo = styled.video`
-//  position: fixed; /* Use 'fixed' to ensure the video covers the entire viewport */
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-//   z-index: -1;
-//   background: rgba(0, 0, 0, 0.5);
-// `;
+export const BackgroundVideo = styled.video`
+ position: fixed; /* Use 'fixed' to ensure the video covers the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.5);
+`;
 
 
 export const Content = styled.div`
