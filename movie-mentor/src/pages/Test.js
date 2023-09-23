@@ -1,28 +1,32 @@
 import React from 'react';
-import { Configuration, OpenAIApi } from 'openai';
+import OpenAI from 'openai';
 import { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { Completions } from 'openai/resources';
 
 const Test = () => {
-    const config = new Configuration({
+    const openai = new OpenAI({
         apiKey: process.env.REACT_APP_OPENAI_API_KEY,
+        dangerouslyAllowBrowser: true,
       })
-      const openai = new OpenAIApi(config);
+      
       const [prompt, setPrompt] = useState('')  
       const [result, setResult] = useState('')
       const [loading, setLoading] = useState(false) 
     
       const handleChange = async () => {
+
         setLoading(true)
         try {
-          const response = await openai.createCompletion({
-            model: 'text-davinci-003',
+            console.log("Hello")
+          const response = await openai.chat.completions.create({
+            model: 'gpt-3.5-turbo',
             prompt: prompt,
-            temperature: 0.5,
+            temperature: 1,
             max_tokens: 350,
           })
-          setResult(response.data.choices[0].text)
+          setResult(completion.choices[0].message.content)
         } catch(error) { 
             console.log(error);
         }
@@ -30,7 +34,7 @@ const Test = () => {
       }
     
       const textAreaStyle = {
-        top:"40px",
+        top:"10px",
         left:"40px",
       };
     
@@ -41,7 +45,7 @@ const Test = () => {
             style={textAreaStyle}
             value = {prompt}
             placeholder = "Start writing here..."
-            onChange = {e => setPrompt(e.target.value)}
+            onChange = {e => (setPrompt(e.target.value))}
             name="" id="" cols="30" rows="10"></textarea>
             <button onClick={handleChange}> 
               {loading ? 'Loading...' : 'Done'}
