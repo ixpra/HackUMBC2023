@@ -3,11 +3,9 @@ import {React, useState, useRef, useEffect} from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import {MdClose, MdMenu} from 'react-icons/md';
 
-import { onAuthStateChanged, getAuth, updateProfile, signOut } from "firebase/auth";
 
 
 import '../css/Navbar.css'
-import Alert from './Alert';
 
 const Navbar = () => {  
 
