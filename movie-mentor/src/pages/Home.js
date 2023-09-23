@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { HomeContainer, BackgroundVideo, Content, LargeText, TransparentButton } from '../components/Navbar/InfoSection/HomeElements';
+import { HomeContainer, BackgroundVideo, Content, LargeText, TransparentButton } from '../components/InfoSection/HomeElements';
 
 const Home = () => {
 
