@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HomeContainer = styled.div`
   position: relative;
-  height: 100vh;
+  height: 100vw;
 `;
 
 export const BackgroundVideo = styled.video`
