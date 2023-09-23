@@ -5,7 +5,7 @@ import {MdClose, MdMenu} from 'react-icons/md';
 
 
 
-import '../css/Navbar.css'
+import '../styles/Navbar.css';
 
 const Navbar = () => {  
 
@@ -62,9 +62,7 @@ const Navbar = () => {
         
         {width > 900 && (
             <div className='nav' id='nav'>
-                <div className='top_logo' id='top_logo'>
-                <Link to='/'><div className='toplogo'><img src={require("../assets/hsslogo.png")} alt="logo" className='logo' id="small_topcorner"/ ></div></Link>
-                </div>
+
                 <div className='nav-buttons'>
                     <Link to='/about'><p className='nav-btn'>About us</p></Link>
                     
@@ -75,9 +73,7 @@ const Navbar = () => {
         )}
         {width < 900 && (
             <div className='mobile-nav' id='mobile-nav'>
-                <div className='top_logo' id='top_logo'>
-                <Link to='/'><img src={require("../assets/cornerlogo.png")} alt="logo" className='logo' id="small_topcorner"/ ></Link>
-                </div>
+
 
                 <MdMenu className='open-menu' onClick={()=>{setMenu(true)}}/>
             </div>

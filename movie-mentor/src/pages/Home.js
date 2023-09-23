@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { HomeContainer, BackgroundVideo, Content, LargeText, TransparentButton } from '../components/Navbar/InfoSection/HomeElements';
+import { HomeContainer, BackgroundVideo, Content, LargeText, TransparentButton } from '../components/InfoSection/HomeElements';
 
 const Home = () => {
 
   return (
     <HomeContainer>
       <BackgroundVideo autoPlay muted loop>
-        <source src={require('../assets/.mp4')} type="video/mp4" />
+        {/* <source src={require('../assets/.mp4')} type="video/mp4" /> */}
       </BackgroundVideo>
 
       <Content>
