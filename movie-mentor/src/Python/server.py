@@ -6,16 +6,16 @@ app = Flask(__name__)
 
 CORS(app )
 
-API_KEY = "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"
+API_KEY = "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"
 openai.api_key = API_KEY
 
 @app.route('/ask', methods=['POST'])
 def ask_openai():
-    user_input = "Based on the movie given after this sentence ,can you give us a list of similiar movies with\
-  a short description of the movie and then give at the end give a percentage of how similar it is to the entered movie (Give spacing between each movie):" + request.json.get('question')
+    user_input = "can you give me movies recommendations based on" + request.json.get('question') + "and put the title of the movies \
+    in curly braces, and the description of the movies in brackets respectively. Do not give any more information that that. "
     
     response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4",
         messages=[{"role": "user", "content": user_input}]
     )  
 

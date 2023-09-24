@@ -15,11 +15,9 @@ const Home = () => {
   const [answer, setAnswer] = useState("");
 
   const askOpenAI = async () => {
-
       try {
           const response = await axios.post('http://127.0.0.1:5000/ask', { question: question });
           setAnswer(response.data.answer)
-          console.log(response.data)
       } catch (error) {
           console.error("Error asking OpenAI:", error);
       }
@@ -36,15 +34,10 @@ const Home = () => {
       <Content>
         <LargeText>Your Cinematic Discovery</LargeText>
         {/* <div className='alt-subtitle'> */}
-        <div>
-        <div>
-          <input value={question} onChange={e => setQuestion(e.target.value)} placeholder="Ask something..." />
-          <button onClick={askOpenAI}>Ask</button>
-        </div>
-          <div>Answer: {answer}</div>
-      </div>
         <SearchContainer>
-          <SearchInput type="text" placeholder="Search movies..." />
+          <SearchInput value={question} onChange={e => setQuestion(e.target.value)} placeholder="Search movies..." />
+          <button onClick={askOpenAI}>Search</button>
+          <div>Answer: {answer} </div>
         </SearchContainer>
         {/* </div> */}
         
