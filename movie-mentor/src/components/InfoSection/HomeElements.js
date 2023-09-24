@@ -100,3 +100,6 @@ export const SearchButton = styled.button`
     margin-right: 5px; /* Add some spacing between the icon and text */
   }
 `;
+
+
+

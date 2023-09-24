@@ -15,15 +15,18 @@ import '../styles/About.css';
 const Home = () => {
   const [question, setQuestion] = useState("");
   const [movies, setMovies] = useState([]);
+  const [loading, setLoading] = useState(false);
 
 
   const askOpenAI = async () => {
+    setLoading(true);
     try {
         const response = await axios.post('http://127.0.0.1:5000/ask', { question: question });
         setMovies(response.data.movies);
     } catch (error) {
         console.error("Error asking OpenAI:", error);
     }
+    setLoading(false);
 }
 
 
@@ -37,11 +40,12 @@ const Home = () => {
       </BackgroundVideo>
 
       <Content>
-        <LargeText>Your Cinematic Discovery</LargeText>
+        <LargeText>YOUR CINEMATIC DISCOVERY</LargeText>
         <SearchContainer>
-          <SearchInput value={question} onChange={e => setQuestion(e.target.value)} placeholder="Search movies..." />
-          <SearchButton onClick={askOpenAI}>
-             <i className="fa fa-search" /> Search
+          <SearchInput value={question} onChange={e => setQuestion(e.target.value)}/>
+          <SearchButton onClick={askOpenAI} disabled={loading}>
+             <i className="fa fa-search" />
+             {loading ? 'Loading...' : 'Search'}
           </SearchButton>
           <div>
              {movies.map(movie => (

@@ -17,7 +17,7 @@ def ask_openai():
     in curly braces, and the description of the movies in brackets respectively. Do not give any more information than that. "
 
     response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4",
         messages=[{"role": "user", "content": user_input}]
     )
     text = response.choices[0].message['content']

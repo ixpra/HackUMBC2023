@@ -42,10 +42,6 @@ const Navbar = () => {
     };
     const [menu, setMenu] = useState(false);
 
-    
-
-
-
     return (
         <>
             {menu && (
