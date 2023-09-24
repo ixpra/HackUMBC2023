@@ -9,6 +9,7 @@ export const HomeContainer = styled.div`
   flex-direction: column;
   z-index: 4;
   margin-bottom: -20vh;
+  background: linear-gradient(135deg, #ed832a 0%, #b784b2 100%);
 `;
 
 export const BackgroundVideo = styled.video`
