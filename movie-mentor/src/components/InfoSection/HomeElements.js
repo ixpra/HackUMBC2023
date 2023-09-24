@@ -4,7 +4,7 @@ export const HomeContainer = styled.div`
   /* width: 100vw;
   height: 100vh; */
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,7 +28,8 @@ export const BackgroundVideo = styled.video`
 
 export const Content = styled.div`
   position: absolute;
-  top: 50%;
+  /* top: 50%; */
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -45,7 +46,8 @@ export const LargeText = styled.h1`
 `;
 
 export const SearchContainer = styled.div`
-  margin-top: 20px;
+  /* margin-top: -200px; */
+  margin-bottom: -500px;
 `;
 
 export const SearchInput = styled.input`
@@ -56,18 +58,24 @@ export const SearchInput = styled.input`
   border: 2px solid #fff;
   background-color: transparent;
   border-radius: 25px;
-
+  
+  ::-webkit-input-placeholder{
+    color: white;
+    opacity: 100%;
+  }
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #fff;
-    opacity: 1; /* Firefox */
+    color: white;
+    opacity: 100%;
   }
 
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #fff;
+    color: white;
+    opacity: 100%;
   }
 
   ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #fff;
+    color: white;
+    opacity: 100%;
   }
 `;
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HomeContainer, BackgroundVideo, Content, LargeText, TransparentButton, SearchContainer, SearchInput, SearchButton } from '../components/InfoSection/HomeElements';
-import Navbar from '../components/Navbar';
+
 import Footer from '../components/Footer';
 import MovieCard from '../components/MovieCard';
 import { useState } from 'react';
@@ -29,7 +29,7 @@ const Home = () => {
 
   return (
     <>
-    <Navbar/>
+
     <HomeContainer>
     
       {/* <BackgroundVideo autoPlay muted loop>
@@ -43,15 +43,16 @@ const Home = () => {
           <SearchButton onClick={askOpenAI}>
              <i className="fa fa-search" /> Search
           </SearchButton>
-          <div>
+        </SearchContainer>
+      </Content>
+      <div>
              {movies.map(movie => (
               <MovieCard {...{title: movie.title,description:movie.description}}/>
                 
              ))}
-          </div>
-        </SearchContainer>
-      </Content>
+      </div>
       </HomeContainer>
+      
     <Footer/>
 
     
