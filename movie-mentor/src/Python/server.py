@@ -10,14 +10,14 @@ app = Flask(__name__)
 
 CORS(app)
 
-API_KEY = os.getenv("OPENAI_API_KEY")
+API_KEY = "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"
 openai.api_key = API_KEY
 
 
 @app.route('/ask', methods=['POST'])
 def ask_openai():
     user_input = "give movies similar to" + request.json.get('question') + "and put the title of the movies \
-    in curly braces, and the description of the movies in parenthesisrespectively. Do not give any more information than this and do not haave\
+    in curly braces, and the description of the movies in parenthesisrespectively. Do not give any more information than this and do not have\
     Embeded Parenthesis anywhere. "
 
     response = openai.ChatCompletion.create(
