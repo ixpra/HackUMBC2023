@@ -6,7 +6,8 @@ import Footer from '../components/Footer';
 import { useState } from 'react';
 import axios from 'axios';
 import 'font-awesome/css/font-awesome.min.css';
-
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 import '../styles/About.css';
 
@@ -50,7 +51,6 @@ const Home = () => {
              ))}
           </div>
         </SearchContainer>
-        
       </Content>
     </HomeContainer>
     <Footer/>

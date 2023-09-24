@@ -71,8 +71,9 @@ const Navbar = () => {
             <div className='nav' id='nav'>
 
                 <div className='nav-buttons'>
-                    <Link to='/'><p className='nav-btn'>Home</p></Link>
-                    <Link to='/about'><p className='nav-btn'>About us</p></Link>
+                    
+                    <Link to='/'><p className='nav-btn'><span class="bolded">Home</span></p></Link>
+                    <Link to='/about'><p className='nav-btn'><span class="bolded">About us</span></p></Link>
                     
                     
                     
