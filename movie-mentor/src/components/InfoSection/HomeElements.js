@@ -49,8 +49,21 @@ export const SearchInput = styled.input`
   border: 2px solid #fff;
   background-color: transparent;
   border-radius: 25px;
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+  }
 `;
-  
+
 
 export const TransparentButton = styled.button`
   background-color: transparent;
@@ -65,5 +78,25 @@ export const TransparentButton = styled.button`
   &:hover {
     background-color: #fff; 
     color: #000; 
+  }
+`;
+export const SearchButton = styled.button`
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+
+  &:hover {
+    background-color: #45a049;
+  }
+
+  /* Add the Font Awesome icon */
+  i {
+    font-size: 16px;
+    margin-right: 5px; /* Add some spacing between the icon and text */
   }
 `;
