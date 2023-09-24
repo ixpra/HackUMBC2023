@@ -13,7 +13,7 @@ openai.api_key = API_KEY
 
 @app.route('/ask', methods=['POST'])
 def ask_openai():
-    user_input = "can you give me movies recommendations based on" + request.json.get('question') + "and put the title of the movies \
+    user_input = "give movie recommendations based on" + request.json.get('question') + "and put the title of the movies \
     in curly braces, and the description of the movies in brackets respectively. Do not give any more information than that. "
 
     response = openai.ChatCompletion.create(

@@ -65,9 +65,10 @@
 }
 
 .member-card-container{
-    /* background-color: rgba(255, 255, 255, 0.048); */
-    /* border: 1px solid rgba(255, 255, 255, 0.068); */
-    background-color: rgb(233, 170, 94);
+    background-color: rgba(255, 255, 255, 0.048); 
+     border: 1px solid rgba(255, 255, 255, 0.068);
+    /* background-color: rgb(233, 170, 94); */
+    /* background: linear-gradient(135deg, #ed832a 0%, #b784b2 100%); */
     border: 1px solid rgb(233, 170, 94);
     
     display: flex;
