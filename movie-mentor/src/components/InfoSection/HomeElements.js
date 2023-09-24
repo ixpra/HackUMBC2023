@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const HomeContainer = styled.div`
+  /* width: 100vw;
+  height: 100vh; */
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -32,10 +34,14 @@ export const Content = styled.div`
   text-align: center;
 `;
 
+
 export const LargeText = styled.h1`
   font-size: 48px;
   font-weight: bold;
-  color: #fff;  
+  color: #fff;
+  /* font-family: "red hat";
+  src: local("RedHatDisplay"),
+  url("../../Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf") format("truetype"); */
 `;
 
 export const SearchContainer = styled.div`

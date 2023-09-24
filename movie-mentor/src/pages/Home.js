@@ -37,7 +37,7 @@ const Home = () => {
       </BackgroundVideo> */}
 
       <Content>
-        <LargeText>Your Cinematic Discovery</LargeText>
+        <LargeText>YOUR CINEMATIC DISCOVERY</LargeText>
         <SearchContainer>
           <SearchInput value={question} onChange={e => setQuestion(e.target.value)} placeholder="Search movies..." />
           <SearchButton onClick={askOpenAI}>
@@ -51,8 +51,10 @@ const Home = () => {
           </div>
         </SearchContainer>
       </Content>
-    </HomeContainer>
+      </HomeContainer>
     <Footer/>
+
+    
     </>
 );
 
