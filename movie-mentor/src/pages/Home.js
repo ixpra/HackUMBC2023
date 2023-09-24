@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { HomeContainer, BackgroundVideo, Content, LargeText, TransparentButton, SearchContainer, SearchInput, SearchButton } from '../components/InfoSection/HomeElements';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import MovieCard from '../components/MovieCard';
 import { useState } from 'react';
 import axios from 'axios';
 import 'font-awesome/css/font-awesome.min.css';
@@ -42,12 +43,10 @@ const Home = () => {
           <SearchButton onClick={askOpenAI}>
              <i className="fa fa-search" /> Search
           </SearchButton>
-
           <div>
              {movies.map(movie => (
-                <div key={movie.title}>
-                  <strong>{movie.title}</strong>: {movie.description}
-                </div>
+              <MovieCard {...{title: movie.title,description:movie.description}}/>
+                
              ))}
           </div>
         </SearchContainer>
