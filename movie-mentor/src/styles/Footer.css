@@ -1,8 +1,9 @@
-@@ -1,60 +0,0 @@
+/* @@ -1,60 +0,0 @@ */
+
 .footer-container{
     width: 100vw;
     height: 25px;
-     margin-top: 10vw;
+    margin-top: 8.5vw;
     color: rgb(255, 255, 255);
     font-size: 14px;
     display: flex;

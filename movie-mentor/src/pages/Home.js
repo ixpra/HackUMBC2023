@@ -29,6 +29,7 @@ const Home = () => {
     <>
     <Navbar/>
     <HomeContainer>
+    
       <BackgroundVideo autoPlay muted loop>
          <source src={require('../assets/ocean.mp4')} type="video/mp4" /> 
       </BackgroundVideo>
